@@ -372,6 +372,172 @@
         </pre>
     </section>
 
+    <section class="slide">
+        <h2>Ветвление</h2>
+        <p>Выбор одной или другой ветки алгоритма, в зависимости от истинности логического выражения.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/If-Then-Else-diagram.svg" width="250">
+    </section>
+
+    <section class="slide">
+        <h2>Логическое выражение</h2>
+        <p>Простейшим логическим вырежением в Python является математическое сравнение.</p>
+
+        <pre>
+            <code>age >= 18</code>
+            <code>length &lt; 25</code>
+            <code>n**2 == 81</code>
+        </pre>
+
+        <p>Результат логического выражения &mdash; значение <b>логического типа</b><br>(<code>True</code> или <code>False</code>).</p>
+    </section>
+
+    <section class="slide">
+        <h2>Операторы сравнения в Python</h2>
+        
+        <ul>
+            <li><code>></code> &mdash; больше</li>
+            <li><code>>=</code> &mdash; больше или равно</li>
+            <li><code>&lt;</code> &mdash; меньше</li>
+            <li><code>&lt;=</code> &mdash; меньше или равно</li>
+            <li><code>==</code> &mdash; равно</li>
+            <li><code>!=</code> &mdash; не равно</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Сложные логические выражения</h2>
+        <p>&mdash; склыдываются из простых при помощи логических операторов.</p>
+
+        <h3>Логические операторы</h3>
+        <ul>
+            <li><code>age >= 18 <b>and</b> age &lt;= 30</code></li>
+            <li><code>length == 10 <b>or</b> width > 15</code></li>
+            <li><code><b>not</b> temperature &lt; 15</code></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Логический оператор <code>and</code></h2>
+        <p>&mdash; дает правду только когда оба простых выражения правдивы.</p>
+
+        <table>
+            <tr>
+                <th><code>a</code></th>
+                <th><code>b</code></th>
+                <th><code>a and b</code></th>
+            </tr>
+            <tr>
+                <td><code>False</code></td>
+                <td><code>False</code></td>
+                <td><code>False</code></td>
+            </tr>
+            <tr>
+                <td><code>False</code></td>
+                <td><code>True</code></td>
+                <td><code>False</code></td>
+            </tr>
+            <tr>
+                <td><code>True</code></td>
+                <td><code>False</code></td>
+                <td><code>False</code></td>
+            </tr>
+            <tr>
+                <td><code>True</code></td>
+                <td><code>True</code></td>
+                <td><code>True</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Логический оператор <code>or</code></h2>
+        <p>&mdash; дает правду когда хотя бы одно из простых выражений правдиво.</p>
+
+        <table>
+            <tr>
+                <th><code>a</code></th>
+                <th><code>b</code></th>
+                <th><code>a or b</code></th>
+            </tr>
+            <tr>
+                <td><code>False</code></td>
+                <td><code>False</code></td>
+                <td><code>False</code></td>
+            </tr>
+            <tr>
+                <td><code>False</code></td>
+                <td><code>True</code></td>
+                <td><code>True</code></td>
+            </tr>
+            <tr>
+                <td><code>True</code></td>
+                <td><code>False</code></td>
+                <td><code>True</code></td>
+            </tr>
+            <tr>
+                <td><code>True</code></td>
+                <td><code>True</code></td>
+                <td><code>True</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Логический оператор <code>not</code></h2>
+        <p>&mdash; превращает ложь в правду, а правду &mdash; в ложь.</p>
+
+        <table>
+            <tr>
+                <th><code>a</code></th>
+                <th><code>not a</code></th>
+            </tr>
+            <tr>
+                <td><code>False</code></td>
+                <td><code>True</code></td>
+            </tr>
+            <tr>
+                <td><code>True</code></td>
+                <td><code>False</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Простейшее ветвление в Python</h2>
+
+        <pre>
+            <code>if age >= 16 and grade >= 10:</code>
+            <code>    print("Бегите, глупцы!")</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Полное ветвление</h2>
+
+        <pre>
+            <code>if age >= 16 or grade >= 10:</code>
+            <code>    python_torture()</code>
+            <code>else:</code>
+            <code>    give_icecream()</code>
+            <code>    pat_on_the_head()</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Каскадное ветвление</h2>
+
+        <pre>
+            <code>if temperature >= 20:</code>
+            <code>    print("Пойдем загорать на солнышке")</code>
+            <code>elif temperature >= 10:</code>
+            <code>    print("Кажется, жить ещё можно")</code>
+            <code>elif temperature >= 0:</code>
+            <code>    print("Холодненько")</code>
+            <code>else:</code>
+            <code>    print("Все. Капец. Зима")</code>
+        </pre>
+    </section>
+
     <footer class="badge">
     </footer>
 
