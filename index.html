@@ -567,8 +567,55 @@
         </pre>
     </section>
 
-    <footer class="badge">
-    </footer>
+    <section class="slide">
+        <h2>Цикл с условием</h2>
+
+        <p>Блок кода, который выполняется снова и снова, пока условие, указанное в его начале истинно.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/While-loop-diagram.svg" width="200">
+    </section>
+
+    <section class="slide">
+        <h2>Простейший цикл с условием в Python</h2>
+
+        <pre>
+            <code>i = 0</code>
+            <code>while i < 100:  # заголовок цикла</code>
+            <code>    print(i)  # тело цикла</code>
+        </pre>
+
+        <ul>
+            <li>Какие числа выведутся на экран?</li>
+            <li>Сколько раз выполнится тело цикла?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Простейший цикл с условием в Python</h2>
+
+        <p>Нельзя забывать в теле цикла изменять переменную, от которой зависит истинность условия в заголовке. Иначе цикл будет бесконечным.</p>
+
+        <pre>
+            <code>i = 0</code>
+            <code>while i < 100:</code>
+            <code>    print(i)</code>
+            <code>    i += 1</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Операции сокращенного присваивания</h2>
+
+        <pre>
+            <code>a += b  # a = a + b</code>
+            <code>a -= b  # a = a - b</code>
+            <code>a *= b  # a = a * b</code>
+            <code>a /= b  # a = a / b</code>
+            <code>a //= b  # a = a // b</code>
+            <code>a %= b  # a = a % b</code>
+        </pre>
+    </section>
+
+    <footer class="badge"></footer>
 
     <div class="progress"></div>
 
