@@ -615,6 +615,70 @@
         </pre>
     </section>
 
+    <section class="slide">
+        <h2>Цикл <code>for</code></h2>
+
+        <p>Цикл <code>for</code> в Python перебирает все значения в каком-либо списке. В переменную, объявленную в заголовке цикла по-очереди записывается каждый из пунктов списка.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Цикл <code>for</code></h2>
+
+        <pre>
+            <code>numbers = [3, 4, 5, 8, 5, 9]</code>
+            <code>for n in numbers:</code>
+            <code>    print(n, end=' ')</code>
+        </pre>
+
+        <ul>
+            <li>Какие числа выведутся на экран?</li>
+            <li>Сколько раз выполнится тело цикла?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Функция <code>range</code></h2>
+
+        <p>Генерирует последовательность по заданным правилам.</p>
+
+        <pre>
+            <code>print(*range(10)) # 0 1 2 3 4 5 6 7 8 9</code>
+            <code>print(*range(5, 10)) # 5 6 7 8 9</code>
+            <code>print(*range(1, 10, 3)) # 1 4 7</code>
+            <code>print(*range(8, 2, -2)) # 8 6 4</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Функция <code>range</code></h2>
+
+        <p>Генерирует последовательность по заданным правилам.</p>
+
+        <pre>
+            <code>range(</code>
+            <code>    левая граница - включительно,</code>
+            <code>    правая граница - не включительно,</code>
+            <code>    шаг - не обязательно</code>
+            <code>)</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Функция <code>range</code></h2>
+
+        <p>Очень удобно используется в связке с циклом <code>for</code>.</p>
+
+        <pre>
+            <code>for i in range(4, 12, 4):</code>
+            <code>    print(i, end=' ')</code>
+        </pre>
+
+        <ul>
+            <li>Какие числа выведутся на экран?</li>
+            <li>Сколько раз выполнится тело цикла?</li>
+        </ul>
+    </section>
+
     <footer class="badge"></footer>
 
     <div class="progress"></div>
